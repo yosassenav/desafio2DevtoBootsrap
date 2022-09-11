@@ -1,5 +1,29 @@
+.text-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.site_logo {
+  height: 40px;
+}
+
+.lupa_icon {
+  height: 20px;
+}
+
+.img_notifications {
+  height: 20px;
+}
+
+.c-btn--icon-alone {
+  border: none;
+  --bs-bg-opacity: 0;
+}
+
 .formatFooter {
   background-color: #e5e5e5;
   font-family: var(--ff-sans-serif);
   font-size: 14px;
-}/*# sourceMappingURL=styles-footer.css.map */
+}
+/*# sourceMappingURL=styles-footer.css.map */
