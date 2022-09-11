@@ -23,113 +23,185 @@
   <body>
     <!--Section 1: Navbar and Left Aside [Anay] -->
 
-    <header>
-      <nav class="navbar__navbar-flex">
-        <div class="d-flex mb-3 border-bottom">
-          <div class="p-2">
-            <img class="site_logo " src="assets/Logo Dev_Nav.png" alt="img_dev_nav">
-          </div>
-          <div class="p-2">
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button type="submit" aria-label="search" class="c-btn c-btn--icon-alone absolute inset-px left-auto mt-0 py-0 bg-light">
-                <img class="lupa_icon" src="/assets/lupa.png" alt="img_lupa_nav">
-              </button>
-            </form>
-          </div>
-          <div class="ms-auto p-2">
-            <button class="btn btn-outline-primary" type="submit">Created Post</button>         
-            <img class="img_notifications" src="assets/bell.png" alt="img_notifications_nav">
-            <div class="btn-group dropstart">
-              <button type="button" class="btn btn-secondary rounded-circle" data-bs-toggle="dropdown" aria-expanded="false"></button>
-              <ul class="dropdown-menu">
-                <li></li>
-                <li><hr class="dropdown-divider"></li>
-                <li>Dashboard</li>
-                <li>Created a post</li>
-                <li>Reading List</li>
-                <li>Settings</li>
-                <li><hr class="dropdown-divider"></li>
-                <li>Sing out</li>
-              </ul>        
-          </div>
+  <header>
+    <nav class="navbar__navbar-flex">
+      <div class="d-flex mb-3 border-bottom">
+        <div class="p-2">
+          <img class="site_logo " src="assets/Navbar/Logo Dev_Nav.png" alt="img_dev_nav">
         </div>
-      </nav>
-    </header>
+        <div class="p-2">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2 border-end-0 rounded-start" type="search" placeholder="Search..." aria-label="Search">
+            <button type="submit" aria-label="search" class="c-btn c-btn--icon-alone absolute inset-px left-auto mt-0 py-0 bg-light">
+              <img class="lupa_icon" src="assets/Navbar/lupa.png" alt="img_lupa_nav">
+            </button>
+          </form>
+        </div>
+        <div class="ms-auto p-2">
+          <button class="btn btn-outline-primary" type="submit">Created Post</button>         
+          <img class="img_notifications" src="assets/Navbar/bell.png" alt="img_notifications_nav">
+          <div class="btn-group dropstart">
+            <button type="button" class="btn btn-secondary rounded-circle" data-bs-toggle="dropdown" aria-expanded="false"></button>
+            <ul class="dropdown-menu">
+              <li></li>
+              <li><hr class="dropdown-divider"></li>
+              <li>Dashboard</li>
+              <li>Created a post</li>
+              <li>Reading List</li>
+              <li>Settings</li>
+              <li><hr class="dropdown-divider"></li>
+              <li>Sing out</li>
+            </ul>        
+        </div>
+      </div>
+    </nav>
+  </header>
 
 
     <aside>
 
-<!-- -----Inicio de botones---- -->
+      <div class="d-flex align-items-start flex-column mb-3" style="height: 200px;">
+        <div class="p-2 bg-light">
+          <ul>
+            <li class="li__menu-list d-flex">
+              <img class="img_menu" src="/assets/Aside izq/house.png" alt="" class="img__home">
+              <a href="#" class="list-group-item list-group-item-action active" aria-current="true">Home</a>
+            </li>
+            <li class="li__menu-list d-flex">
+              <img class="img_menu" src="assets/Aside izq/packing-list.png" alt="" class="img__ReadingList">
+              <a href="#" class="list-group-item list-group-item-action active" aria-current="true">Reading List</a>  
+            </li>
+            <li class="li__menu-list d-flex">
+              <img class="img_menu" src="assets/Aside izq/document.png" alt="" class="img__Listing">
+              <a href="#" class="list-group-item list-group-item-action active" aria-current="true">Listings</a>
+            </li>
+            <li class="li__menu-list d-flex">
+              <img class="img_menu" src="assets/Aside izq/mic.png" alt="" class="img__Podcast">
+              <a href="#" class="list-group-item list-group-item-action active" aria-current="true">Podcast</a>
+            </li>
+            <li class="li__menu-list d-flex">
+              <img class="img_menu" src="assets/Aside izq/video-camera.png" alt="" class="img__Videos">
+              <a href="#" class="list-group-item list-group-item-action active" aria-current="true">Videos</a>
+            </li>
+            <li class="li__menu-list d-flex">
+              <img class="img_menu" src="assets/Aside izq/price-tag.png" alt="" class="img__Tags">
+              <a href="" class="list-group-item list-group-item-action active" aria-current="true">Tags</a>
+            </li>
+            <li class="li__menu-list d-flex">
+              <img class="img_menu" src="assets/Aside izq/light-bulb.png" alt="" class="img__FAQ">
+              <a href="" class="list-group-item list-group-item-action active" aria-current="true">FAQ</a>
+            </li>
+            <li class="li__menu-list d-flex">
+              <img class="img_menu" src="assets/Aside izq/online-shopping.png" alt="" class="img__ForemShop">
+              <a href="" class="list-group-item list-group-item-action active" aria-current="true">Forem Shop</a>
+            </li>
+            <li class="li__menu-list d-flex">
+              <img class="img_menu" src="/assets/Aside izq/corazon.png" alt="" class="img__Spondors">
+              <a href="" class="list-group-item list-group-item-action active" aria-current="true">Spondors</a>  
+            </li>
+            <li class="li__menu-list d-flex">
+              <img class="img_menu" src="assets/Aside izq/dev.jpeg" alt="" class="img__About">
+              <a href="#" class="list-group-item list-group-item-action">About</a>
+            </li>
+            <li class="li__menu-list d-flex">
+              <img class="img_menu" src="assets/Aside izq/trompeta.png" alt="" class="img__Contact">
+              <a href="#" class="list-group-item list-group-item-action">Contact</a>
+            </li>
+            <li class="li__menu-list d-flex">
+              <img class="img_menu" src="assets/Aside izq/open-book-2.png" alt="" class="Guides">
+              <a href="#" class="list-group-item list-group-item-action">Guides</a>
+            </li>
+            <li class="li__menu-list d-flex">
+              <img class="img_menu" src="assets/Aside izq/thinking.png" alt="" class="Sofware">
+              <a href="#" class="list-group-item list-group-item-action">Sofware comparisons</a>
+            </li>
+            </ul>
+        </div>
 
-<div class="list-group">
-  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-    The current link item
-  </a>
-  <a href="#" class="list-group-item list-group-item-action">A second link item</a>
-  <a href="#" class="list-group-item list-group-item-action">A third link item</a>
-  <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-  <a class="list-group-item list-group-item-action disabled">A disabled link item</a>
-</div>
+        <div class="p-2 bg-light">
+          <p class="p__other" >Other</p>
+          <ul>
+            <li class="li_menu-list2 d-flex">
+              <img class="img_menu" src="assets/Aside izq/pulgar-arriba.png" alt="" class="Code">
+              <a href="#" class="list-group-item list-group-item-action active" aria-current="true">Code of Conduct</a>
+            </li>
+            <li class="li_menu-list2 d-flex">
+              <img class="img_menu" src="assets/Aside izq/nerd.png" alt="" class="Privacy">
+              <a href="#" class="list-group-item list-group-item-action">Privacy Policy</a>
+            </li>
+            <li class="li_menu-list2 d-flex">
+              <img class="img_menu" src="assets/Aside izq/eyes.png" alt="" class="Terms">
+              <a href="#" class="list-group-item list-group-item-action">Terms of use</a>
+            </li>
 
-<!-- -----fin de botones---- -->
+          </ul>
+        </div>
+      
+        <div class="p-2">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-light">
+              <img class="img_menu" src="assets/Aside izq/gorjeo.png" alt="" class="Twitter">
+              <a href="#" class="list-group-item list-group-item-action"></a>
+            </button>
+            <button type="button" class="btn btn-light">
+              <img class="img_menu" src="assets/Aside izq/facebook-2.png" alt="" class="facebook">
+              <a href="#" class="list-group-item list-group-item-action"></a>
+            </button>
+            <button type="button" class="btn btn-light">
+              <img class="img_menu" src="assets/Aside izq/instagram.png" alt="" class="Instagram">
+              <a href="#" class="list-group-item list-group-item-action"></a>
+            </button>
+            <button type="button" class="btn btn-light">
+              <img class="img_menu" src="assets/Aside izq/twitch.png" alt="" class="twitch">
+              <a href="#" class="list-group-item list-group-item-action"></a>
+            </button>
+          </div>
+          
+        </div>
 
-<!-- -----Inicio de botones2---- -->
-<div class="list-group">
-  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-    The current link item
-  </a>
-  <a href="#" class="list-group-item list-group-item-action">A second link item</a>
-  <a href="#" class="list-group-item list-group-item-action">A third link item</a>
-  <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-  <a class="list-group-item list-group-item-action disabled">A disabled link item</a>
-</div>
-<!-- -----fin de botones2---- -->
+        
+        <div class="p-2">Flex item</div>
+       
+        <div class="p-2">
+          <div class="card" style="width: 18rem;">
+            <img src="/assets/Aside izq/Codenewbie.png" class="card-img-top" alt="Codenewbie">
+            <div class="card-body">
+              <h5 class="card-title">Calling all early-career developers & coding mentors!</h5>
+              <p class="card-text">Join CodeNewbie Community: a supportive space for coding newbies to connect & express themselves.</p>
+              <a href="#" class="btn btn-light strong">→Get in on the fun!</a>
+            </div>
+          </div>
 
-<!-- -----inicio redes sociales---- -->
-<div class="btn-group" role="group" aria-label="Basic example">
-  <button type="button" class="btn btn-primary">Left</button>
-  <button type="button" class="btn btn-primary">Middle</button>
-  <button type="button" class="btn btn-primary">Right</button>
-</div>
-<!-- -----Fin redes sociales---- -->
+        </div>
+        <div class="p-2">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <p class="card-text">DEV runs on 100% open source code known as
+                <a href="https:/github.com/forem/forem">Forem</a>
+                .
+              </p>
+              <p class="card-text">Contribute to the codebase or host your own!</p>
+              <p><strong>Check these out!</strong></p>
+              <ul>
+                <li class="li__link-card">
+                  <a href="http://github.com/forem/forem" class="card-link">Main Forem Repo</a>
+                </li>
+                <li class="li__link-card">
+                  <a href="http://github.com/forem/selfhost" class="card-link">Self-Host Instructions</a>
+                </li>
 
-<!-- -----Inicio de botones3---- -->
-<div class="list-group">
-  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-    The current link item
-  </a>
-  <a href="#" class="list-group-item list-group-item-action">A second link item</a>
-  <a href="#" class="list-group-item list-group-item-action">A third link item</a>
-  <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-  <a class="list-group-item list-group-item-action disabled">A disabled link item</a>
-</div>
-<!-- -----fin de botones3---- -->
+              </ul>
+            </div>
+          </div>
+          
 
 
-<!-- -----Inicio Card---- -->
-<div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-<!-- -----fin card---- -->
-
-<!-- -----Inicio Card2---- -->
-<div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
-  </div>
-</div>
-<!-- -----Fin Card2---- -->
-
+        </div>
+      
+      
+      
+      
+      </div>
     </aside>
 
 
@@ -141,7 +213,7 @@
     <!--Section 3: Right Aside [Victor] -->
     <aside></aside>
     <!--Section 4: Footer [Vryan] -->
-    <footer class="container-fluid formatFooter mt-2 py-3 text-center">
+    <!-- <footer class="container-fluid formatFooter mt-2 py-3 text-center">
       <p>
         <a href="https://dev.to/">DEV Community 👩‍💻👨‍💻</a> — A constructive and
         inclusive social network for software developers. With you every step of
@@ -177,6 +249,6 @@
           </clipPath>
         </defs>
       </svg>
-    </footer>
+    </footer> -->
   </body>
 </html>
