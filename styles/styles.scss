@@ -1,0 +1,28 @@
+body {
+  font-family: "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+ul {
+  padding-left: 18px;
+}
+
+.card__title-article {
+  justify-content: center;
+  align-items: center;
+}
+
+.card__user-article {
+  width: 32px;
+  height: 32px;
+}
+
+.card__user-time-article {
+  width: 45px;
+  height: 18px;
+}
+
+.formatFooter {
+  background-color: #e5e5e5;
+  font-family: var(--ff-sans-serif);
+  font-size: 14px;
+}
