@@ -11,27 +11,130 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-      crossorigin="anonymous"
-    ></script>
     <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="stylesheet" href="./styles/styles-footer.css" />
+    <link rel="stylesheet" href="./styles/styles-vryahn.css" />
     <link rel="shortcut icon" href="" />
   </head>
+  <!--Section 1: Navbar & Left Aside -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light border-bottom">
+      <div class="container-fluid justify-content-between">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          role="img"
+          aria-labelledby="asl3tjiia7yrqx3bz1nu3qx4pzobyvqi"
+          class="crayons-icon"
+        >
+          <title id="asl3tjiia7yrqx3bz1nu3qx4pzobyvqi">Navigation menu</title>
+          <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"></path>
+        </svg>
+
+        <img src="assets/devto.png" alt="DEV" id="imgDev" />
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Lupa</a>
+              <!-- Barra de búsqueda
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form> -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Campana</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Perfil
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Bryan Rodriguez</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                <li><a class="dropdown-item" href="#">Create Post</a></li>
+                <li><a class="dropdown-item" href="#">Reading List</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Sign Out</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
   <body>
-    <!--Section 1: Navbar and Left Aside [Anay] -->
-    <header>
-      <nav></nav>
-    </header>
-    <aside></aside>
-    <!--Section 2: Main [Vanne] -->
-    <main></main>
-    <!--Section 3: Right Aside [Victor] -->
-    <aside></aside>
-    <!--Section 4: Footer [Vryan] -->
-    <footer class="container-fluid formatFooter mt-2 py-3 text-center">
+    <div class="backgroundPage py-3">
+      <div class="row justify-content-between">
+        <!-- Section 1.1 Left Aside-->
+        <aside class="col bg-primary mx-3 leftAside rounded d-none d-md-block">
+          "leftAside"
+          <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+            <li>Elemento 5</li>
+          </ul>
+        </aside>
+        <!--Section 2: Main -->
+        <main class="col bg-info rounded">
+          "main"
+          <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+            <li>Elemento 5</li>
+          </ul>
+        </main>
+        <!--Section 3: Right Aside -->
+        <aside class="col bg-success mx-3 rounded d-none d-lg-block">
+          "rightAside"
+          <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+            <li>Elemento 5</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+    <!--Section 4: Footer -->
+    <footer class="container-fluid formatFooter mt py-3 text-center">
       <p>
         <a href="https://dev.to/">DEV Community 👩‍💻👨‍💻</a> — A constructive and
         inclusive social network for software developers. With you every step of
@@ -68,5 +171,10 @@
         </defs>
       </svg>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
