@@ -53,18 +53,22 @@
         
         <div class="creation_creation ms-auto">
           <button class="btn btn-outline-primary" type="submit">Created Post</button>         
-          <img class="img_notifications mx-3" src="assets/Navbar/bell.png" alt="img_notifications_nav">
+          <a href="/notifications" id="notifications_link" class="c-link c-link--icon-alone c-link--block mx-1" aria-label="notifications" aria aria-current="page">
+            <img class="img_notifications mx-3" src="assets/Navbar/bell.png" alt="img_notifications_nav">
+          </a>
           <div class="btn-group dropstart">
             <button type="button" class="button_perfil btn btn-secondary rounded-circle" data-bs-toggle="dropdown" aria-expanded="false"></button>
-            <ul class="dropdown-menu">
-              <li></li>
+            <ul class="List_item dropdown-menu">
+              <li class="List_button btn" >SuperKoders
+                <p class="List_mail">@SuperKoders</p>
+                </li>
               <li><hr class="dropdown-divider"></li>
-              <li>Dashboard</li>
-              <li>Created a post</li>
-              <li>Reading List</li>
-              <li>Settings</li>
+              <li class="List_button btn">Dashboard</li>
+              <li class="List_button btn">Created a post</li>
+              <li class="List_button btn">Reading List</li>
+              <li class="List_button btn">Settings</li>
               <li><hr class="dropdown-divider"></li>
-              <li>Sing out</li>
+              <li class="List_button btn">Sing out</li>
             </ul>        
           </div>
         </div>
@@ -72,10 +76,10 @@
     </nav>
   </header>
 
-    <aside>
-
+    <!-- <aside class="col bg-primary mx-3 leftAside rounded d-none d-md-block"> -->
       <div class="d-flex align-items-start flex-column mb-3">
-        <div class="p-2 bg-light">
+      <div class="all_slist_items">
+        <div class="m-2 p-2 bg-light">
           <ul>
             <li class="li__menu-list d-flex btn btn-light">
               <img class="img_menu" src="/assets/Aside izq/house.png" alt="" class="img__home">
@@ -132,7 +136,7 @@
             </ul>
         </div>
 
-        <div class="p-2 bg-light">
+        <div class="mx-2 p-2 bg-light">
           <p class="p__other" >Other</p>
           <ul>
             <li class="li_menu-list2 d-flex btn btn-light">
@@ -151,7 +155,7 @@
           </ul>
         </div>
       
-        <div class="p-2">
+        <div class="mx-2 p-2">
           <div class="btn-group" role="group" aria-label="Basic example">
             <button type="button" class="btn btn-light">
               <img class="img_menu" src="assets/Aside izq/gorjeo.png" alt="" class="Twitter">
@@ -159,6 +163,10 @@
             </button>
             <button type="button" class="btn btn-light">
               <img class="img_menu" src="assets/Aside izq/facebook-2.png" alt="" class="facebook">
+              <a href="#" class="list-group-item list-group-item-action"></a>
+            </button>
+            <button type="button" class="btn btn-light">
+              <img class="img_menu" src="assets/Aside izq/github.png" alt="" class="github">
               <a href="#" class="list-group-item list-group-item-action"></a>
             </button>
             <button type="button" class="btn btn-light">
@@ -175,11 +183,11 @@
 
         
         <!-- <nav class="mb-6" aria-label="Aside-Nav"> -->
-          <div class="p-2">
+          <div class="m-2 p-2 ">
             <header class="pt-2 pl-3 pb-0 pr-0 flex items-center jutify-between">
             <h2 class="Section_tags" >My Tags</h2>
             <a id="tag-priority-link" href="/dashboard/following_tags" class="c-link c-link--block c-link--icon alone" aria-label="customize tag priority" title="Customize tag priority"></a>
-          </header>
+            </header>
             <div class="div div__Aside-Nav-Tags">
               <a href="/t/javascript" class="c-link c-link--block" title="javascript tag">#javascript</a>
               <a href="/t/react" class="c-link c-link--block" title="react tag">#react</a>
@@ -207,7 +215,7 @@
           </div>            
         </nav>
        
-        <div class="p-2">
+        <div class="m-2 p-2">
           <div class="card" style="width: 18rem;">
             <img src="/assets/Aside izq/Codenewbie.png" class="card-img-top" alt="Codenewbie">
             <div class="card-body">
@@ -218,7 +226,7 @@
           </div>
 
         </div>
-        <div class="p-2">
+        <div class="m-2 p-2">
           <div class="card" style="width: 18rem;">
             <div class="card-body">
               <p class="card-text">DEV runs on 100% open source code known as
@@ -244,7 +252,7 @@
         </div>
       
       
-      
+      </div>     
       </div>
     </aside>
 

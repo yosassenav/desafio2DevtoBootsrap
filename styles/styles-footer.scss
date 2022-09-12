@@ -37,7 +37,23 @@
   width:350px;
 }
 
+.List_item{
+  font: inherit;
+  width: 200px;
+
+    .List_mail{
+      font-size: 13px;
+    }
+}
 // ------- Fin Styles Navbar--------------
+
+// ------- Inicio Styles Aside--------------
+
+// .img_menu{
+//   width: auto;
+// }
+// ------- Final Styles Aside--------------
+
 
 .formatFooter{
     background-color: #e5e5e5;

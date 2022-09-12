@@ -38,6 +38,15 @@
   width: 350px;
 }
 
+.List_item {
+  font: inherit;
+  width: 200px;
+}
+
+.List_item .List_mail {
+  font-size: 13px;
+}
+
 .formatFooter {
   background-color: #e5e5e5;
   font-family: var(--ff-sans-serif);
