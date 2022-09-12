@@ -47,6 +47,11 @@
   font-size: 13px;
 }
 
+.list-group-item {
+  text-align: left;
+  margin-left: 10px;
+}
+
 .formatFooter {
   background-color: #e5e5e5;
   font-family: var(--ff-sans-serif);
