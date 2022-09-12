@@ -52,6 +52,11 @@
   margin-left: 10px;
 }
 
+.p__other {
+  text-align: left;
+  margin-left: 10px;
+}
+
 .formatFooter {
   background-color: #e5e5e5;
   font-family: var(--ff-sans-serif);
