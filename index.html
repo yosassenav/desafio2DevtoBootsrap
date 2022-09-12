@@ -24,22 +24,36 @@
     <!--Section 1: Navbar and Left Aside [Anay] -->
 
   <header>
-    <nav class="navbar__navbar-flex">
-      <div class="d-flex mb-3 border-bottom">
-        <div class="p-2">
-          <img class="site_logo " src="assets/Navbar/Logo Dev_Nav.png" alt="img_dev_nav">
-        </div>
-        <div class="p-2">
-          <form class="d-flex" role="search">
-            <input class="form-control me-2 border-end-0" type="search" placeholder="Search..." aria-label="Search">
-            <button type="submit" aria-label="search" class="c-btn c-btn--icon-alone absolute inset-px left-auto mt-0 py-0 bg-light">
-              <img class="lupa_icon" src="assets/Navbar/lupa.png" alt="img_lupa_nav">
+    <nav class="navbar__navbar-flex navbar-expand-lg border-bottom">
+      <div class="div__navbar__navbar d-flex me-5 ms-5 p-2">
+        <div class="img__img-dev">
+          <span class="inline-block m:hidden">
+            <button class="c-btn c-btn--icon-alone js-hamburger-triger mx-2 bg-light">
+              <img class="hamburg_icon" src="/assets/Aside izq/hamburger.png" alt="hamburger_icon">
             </button>
+          </span>
+          <a href="/" class="site-logo" aria-label="DEV Comunity 👩‍💻👨‍💻 Home">
+            <img class="site_logo" src="assets/Navbar/Logo Dev_Nav.png" alt="img_dev_nav">
+          </a>
+        </div>
+
+        <div class="search_search js search-form ms-3 me-5" id="search_main">
+          <form method="get" action="/search" role="search" accept-charset="utf-9">
+            <input name="utf8" type="hidden" value="ok">
+            <div class="search-fieldHoe">
+              <div class="search-field flex-1 relative border rounded-2">
+                <input class="search-text border-0 m-2" type="text" id name="q" placeholder="Search..." autocomplete="off" aria-label="Search text">
+                <button type="submit" aria-label="Search" class="btn btn-outline-secondary border-0 bg-white">
+                  <img class="lupa_icon" src="assets/Navbar/lupa.png" alt="img_lupa_nav">      
+                </button>
+              </div>
+            </div>
           </form>
         </div>
-        <div class="ms-auto p-2">
+        
+        <div class="creation_creation ms-auto">
           <button class="btn btn-outline-primary" type="submit">Created Post</button>         
-          <img class="img_notifications" src="assets/Navbar/bell.png" alt="img_notifications_nav">
+          <img class="img_notifications mx-3" src="assets/Navbar/bell.png" alt="img_notifications_nav">
           <div class="btn-group dropstart">
             <button type="button" class="btn btn-secondary rounded-circle" data-bs-toggle="dropdown" aria-expanded="false"></button>
             <ul class="dropdown-menu">
@@ -52,6 +66,7 @@
               <li><hr class="dropdown-divider"></li>
               <li>Sing out</li>
             </ul>        
+          </div>
         </div>
       </div>
     </nav>
@@ -60,7 +75,7 @@
 
     <aside>
 
-      <div class="d-flex align-items-start flex-column mb-3" style="height: 200px;">
+      <div class="d-flex align-items-start flex-column mb-3">
         <div class="p-2 bg-light">
           <ul>
             <li class="li__menu-list d-flex btn btn-light">
@@ -160,8 +175,9 @@
         </div>
 
         
-        <nav class="mb-6" aria-label="Aside-Nav">
-          <header class="pt-2 pl-3 pb-0 pr-0 flex items-center jutify-between">
+        <!-- <nav class="mb-6" aria-label="Aside-Nav"> -->
+          <div class="p-2">
+            <header class="pt-2 pl-3 pb-0 pr-0 flex items-center jutify-between">
             <h2 class="Section_tags" >My Tags</h2>
             <a id="tag-priority-link" href="/dashboard/following_tags" class="c-link c-link--block c-link--icon alone" aria-label="customize tag priority" title="Customize tag priority"></a>
           </header>
@@ -189,6 +205,7 @@
               <a href="/t/gamedev" class="c-link c-link--block" title="gamedev tag">#gamedev</a>
               <a href="/t/sre" class="c-link c-link--block" title="sre tag">#sre</a>
             </div>
+          </div>            
         </nav>
        
         <div class="p-2">
