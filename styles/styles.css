@@ -11,9 +11,18 @@ ul {
   height: 32px;
 }
 
+.card__user-text {
+  width: 24px;
+  height: 24px;
+}
+
 .card__user-time-article {
   width: 45px;
   height: 18px;
+}
+
+.li__style-none {
+  list-style-type: none;
 }
 
 .formatFooter {

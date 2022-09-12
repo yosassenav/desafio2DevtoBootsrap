@@ -31,7 +31,7 @@
       <!--Section 3: Main [Vanne] -->
       <main class="container-fluid">
         <div>
-          <ul class="d-flex" style="list-style-type: none">
+          <ul class="d-flex li__style-none">
             <li>
               <button class="rounded btn btn-light mx-1">Relevant</button>
             </li>
@@ -41,7 +41,7 @@
             <li><button class="rounded btn btn-light mx-1">Top</button></li>
           </ul>
         </div>
-        <div class="card d-flex">
+        <div class="card d-flex mb-3">
           <img
             src="https://res.cloudinary.com/practicaldev/image/fetch/s--7logSdNt--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/61shkfeklxhsy9od6xly.png"
             class="card-img-top card__image-article-cover"
@@ -75,7 +75,7 @@
               </b>
             </h1>
             <div class="me-5">
-              <ul class="d-flex" style="list-style-type: none">
+              <ul class="d-flex li__style-none">
                 <li>
                   <button class="rounded btn btn-light me-1 btn-sm">
                     #discuss
@@ -94,7 +94,7 @@
               </ul>
             </div>
             <div class="d-flex justify-content-between">
-              <ul class="d-flex" style="list-style-type: none">
+              <ul class="d-flex li__style-none">
                 <li>
                   <button class="rounded btn btn-light me-1 btn-sm">
                     <img src="./assets/heart.png" />
@@ -123,35 +123,297 @@
                 </div>
               </div>
             </div>
-            <p class="card-text mx-4 bg-light text-break">
-              The answer to your question depends on the license that you
-              applied to your work. Your post doesn't indicate, but since you
-              have a relatively small number if GitHub repositories I took a
-              look. Some of your repos have no license specified, some have the
-              MIT license, and 1 the Apache license. Here's a bit of an answer
-              for all 3 cases. Case 1: no license specified. Technically, if you
-              have not specified a license, and have also not explicitly put the
-              work into the public domain, then nobody but you can legally make
-              a copy. Whether you have explicitly stated this anywhere or not,
-              this case is essentially a copyright with all rights reserved. If
-              this is your intention then it should probably be a private
-              repository. People fork and clone public repos all the time
-              including those without licenses stated. Many mistakenly think no
-              license means public domain which it does not. Case 2: MIT
-              license. This is an all-permissive license. It allows others to do
-              almost anything with your code. They can copy it as is. They can
-              use it in closed source commercial software. They can change it.
-              They can give it away for free with or without changes. They can
-              sell it with or without changes. And so on and so forth. The only
-              requirement is that they keep the copyright notice and license
-              notice in tact in any copies they distribute including in
-              "substantial portions". However, they can redistribute it with or
-              without changes under whatever license they want. The main purpose
-              of requiring keeping the notice is so that others know how that
-              portion was originally licensed. They can copy non-substantial
-              portions without including your copyright notice and license
-              notice.
-            </p>
+            <div class="card-text mx-4 bg-light">
+              <div class="d-flex">
+                <div class="my-3 mx-2">
+                  <img
+                    src="https://res.cloudinary.com/practicaldev/image/fetch/s--37gAJlK9--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/87123/19f5feda-2e87-46df-81dd-11abdbd5efc8.png"
+                    class="card__user-text rounded-circle"
+                  />
+                </div>
+                <div class="my-3 mx-2">anonymous 8 august</div>
+              </div>
+              <p class="mx-4 text-break">
+                The answer to your question depends on the license that you
+                applied to your work. Your post doesn't indicate, but since you
+                have a relatively small number if GitHub repositories I took a
+                look. Some of your repos have no license specified, some have
+                the MIT license, and 1 the Apache license. Here's a bit of an
+                answer for all 3 cases. Case 1: no license specified.
+                Technically, if you have not specified a license, and have also
+                not explicitly put the work into the public domain, then nobody
+                but you can legally make a copy. Whether you have explicitly
+                stated this anywhere or not, this case is essentially a
+                copyright with all rights reserved. If this is your intention
+                then it should probably be a private repository. People fork and
+                clone public repos all the time including those without licenses
+                stated. Many mistakenly think no license means public domain
+                which it does not. Case 2: MIT license. This is an
+                all-permissive license. It allows others to do almost anything
+                with your code. They can copy it as is. They can use it in
+                closed source commercial software. They can change it. They can
+                give it away for free with or without changes. They can sell it
+                with or without changes. And so on and so forth. The only
+                requirement is that they keep the copyright notice and license
+                notice in tact in any copies they distribute including in
+                "substantial portions". However, they can redistribute it with
+                or without changes under whatever license they want. The main
+                purpose of requiring keeping the notice is so that others know
+                how that portion was originally licensed. They can copy
+                non-substantial portions without including your copyright notice
+                and license notice.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card d-flex mb-3">
+          <img
+            src="https://res.cloudinary.com/practicaldev/image/fetch/s--7logSdNt--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/61shkfeklxhsy9od6xly.png"
+            class="card-img-top card__image-article-cover"
+            alt="..."
+          />
+          <div class="card-body">
+            <div class="d-flex flex-row mb-3">
+              <div class="flex-column mb-3">
+                <a href="#">
+                  <img
+                    src="https://res.cloudinary.com/practicaldev/image/fetch/s--9WR2-vk7--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/818262/a94675b3-79c3-4aaa-b0af-580149ef0c14.png"
+                    class="card__user-article rounded-circle"
+                  />
+                </a>
+              </div>
+              <div
+                class="d-flex btn-group-vertical"
+                role="group"
+                aria-label="Vertical button group"
+              >
+                <button class="btn btn-light btn-sm mx-2 text-start">
+                  Sadeedpv
+                </button>
+                <p class="btn btn-sm mx-2 text-start"><a>15 Jul</a></p>
+              </div>
+            </div>
+            <h1 class="card-title mx-3 d-flex">
+              <b>
+                Someone copied my code on Github and claimed it to be his own
+                project.
+              </b>
+            </h1>
+            <div class="me-5">
+              <ul class="d-flex li__style-none">
+                <li>
+                  <button class="rounded btn btn-light me-1 btn-sm">
+                    #discuss
+                  </button>
+                </li>
+                <li>
+                  <button class="rounded btn btn-light me-1 btn-sm">
+                    #github
+                  </button>
+                </li>
+                <li>
+                  <button class="rounded btn btn-light me-1 btn-sm">
+                    #beginners
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="d-flex justify-content-between">
+              <ul class="d-flex li__style-none">
+                <li>
+                  <button class="rounded btn btn-light me-1 btn-sm">
+                    <img src="./assets/heart.png" />
+                    196
+                    <span class="d-none d-sm-inline">Reactions</span>
+                  </button>
+                </li>
+                <li>
+                  <button class="rounded btn btn-light me-1 btn-sm">
+                    <img src="./assets/speech-bubble.png" />
+                    40
+                    <span class="d-none d-sm-inline">Comments</span>
+                  </button>
+                </li>
+              </ul>
+              <div class="d-flex">
+                <div>
+                  <p class="btn btn-sm mx-2">
+                    <a>1 min read</a>
+                  </p>
+                </div>
+                <div class="justify-content-center">
+                  <button class="rounded btn btn-light btn-sm">
+                    <img src="./assets/save-instagram.png" />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card-text mx-4 bg-light">
+              <div class="d-flex">
+                <div class="my-3 mx-2">
+                  <img
+                    src="https://res.cloudinary.com/practicaldev/image/fetch/s--37gAJlK9--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/87123/19f5feda-2e87-46df-81dd-11abdbd5efc8.png"
+                    class="card__user-text rounded-circle"
+                  />
+                </div>
+                <div class="my-3 mx-2">anonymous 8 august</div>
+              </div>
+              <p class="mx-4 text-break">
+                The answer to your question depends on the license that you
+                applied to your work. Your post doesn't indicate, but since you
+                have a relatively small number if GitHub repositories I took a
+                look. Some of your repos have no license specified, some have
+                the MIT license, and 1 the Apache license. Here's a bit of an
+                answer for all 3 cases. Case 1: no license specified.
+                Technically, if you have not specified a license, and have also
+                not explicitly put the work into the public domain, then nobody
+                but you can legally make a copy. Whether you have explicitly
+                stated this anywhere or not, this case is essentially a
+                copyright with all rights reserved. If this is your intention
+                then it should probably be a private repository. People fork and
+                clone public repos all the time including those without licenses
+                stated. Many mistakenly think no license means public domain
+                which it does not. Case 2: MIT license. This is an
+                all-permissive license. It allows others to do almost anything
+                with your code. They can copy it as is. They can use it in
+                closed source commercial software. They can change it. They can
+                give it away for free with or without changes. They can sell it
+                with or without changes. And so on and so forth. The only
+                requirement is that they keep the copyright notice and license
+                notice in tact in any copies they distribute including in
+                "substantial portions". However, they can redistribute it with
+                or without changes under whatever license they want. The main
+                purpose of requiring keeping the notice is so that others know
+                how that portion was originally licensed. They can copy
+                non-substantial portions without including your copyright notice
+                and license notice.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card d-flex mb-3">
+          <img
+            src="https://res.cloudinary.com/practicaldev/image/fetch/s--7logSdNt--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/61shkfeklxhsy9od6xly.png"
+            class="card-img-top card__image-article-cover"
+            alt="..."
+          />
+          <div class="card-body">
+            <div class="d-flex flex-row mb-3">
+              <div class="flex-column mb-3">
+                <a href="#">
+                  <img
+                    src="https://res.cloudinary.com/practicaldev/image/fetch/s--9WR2-vk7--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/818262/a94675b3-79c3-4aaa-b0af-580149ef0c14.png"
+                    class="card__user-article rounded-circle"
+                  />
+                </a>
+              </div>
+              <div
+                class="d-flex btn-group-vertical"
+                role="group"
+                aria-label="Vertical button group"
+              >
+                <button class="btn btn-light btn-sm mx-2 text-start">
+                  Sadeedpv
+                </button>
+                <p class="btn btn-sm mx-2 text-start"><a>15 Jul</a></p>
+              </div>
+            </div>
+            <h1 class="card-title mx-3 d-flex">
+              <b>
+                Someone copied my code on Github and claimed it to be his own
+                project.
+              </b>
+            </h1>
+            <div class="me-5">
+              <ul class="d-flex li__style-none">
+                <li>
+                  <button class="rounded btn btn-light me-1 btn-sm">
+                    #discuss
+                  </button>
+                </li>
+                <li>
+                  <button class="rounded btn btn-light me-1 btn-sm">
+                    #github
+                  </button>
+                </li>
+                <li>
+                  <button class="rounded btn btn-light me-1 btn-sm">
+                    #beginners
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="d-flex justify-content-between">
+              <ul class="d-flex li__style-none">
+                <li>
+                  <button class="rounded btn btn-light me-1 btn-sm">
+                    <img src="./assets/heart.png" />
+                    196
+                    <span class="d-none d-sm-inline">Reactions</span>
+                  </button>
+                </li>
+                <li>
+                  <button class="rounded btn btn-light me-1 btn-sm">
+                    <img src="./assets/speech-bubble.png" />
+                    40
+                    <span class="d-none d-sm-inline">Comments</span>
+                  </button>
+                </li>
+              </ul>
+              <div class="d-flex">
+                <div>
+                  <p class="btn btn-sm mx-2">
+                    <a>1 min read</a>
+                  </p>
+                </div>
+                <div class="justify-content-center">
+                  <button class="rounded btn btn-light btn-sm">
+                    <img src="./assets/save-instagram.png" />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card-text mx-4 bg-light">
+              <div class="d-flex">
+                <div class="my-3 mx-2">
+                  <img
+                    src="https://res.cloudinary.com/practicaldev/image/fetch/s--37gAJlK9--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/87123/19f5feda-2e87-46df-81dd-11abdbd5efc8.png"
+                    class="card__user-text rounded-circle"
+                  />
+                </div>
+                <div class="my-3 mx-2">anonymous 8 august</div>
+              </div>
+              <p class="mx-4 text-break">
+                The answer to your question depends on the license that you
+                applied to your work. Your post doesn't indicate, but since you
+                have a relatively small number if GitHub repositories I took a
+                look. Some of your repos have no license specified, some have
+                the MIT license, and 1 the Apache license. Here's a bit of an
+                answer for all 3 cases. Case 1: no license specified.
+                Technically, if you have not specified a license, and have also
+                not explicitly put the work into the public domain, then nobody
+                but you can legally make a copy. Whether you have explicitly
+                stated this anywhere or not, this case is essentially a
+                copyright with all rights reserved. If this is your intention
+                then it should probably be a private repository. People fork and
+                clone public repos all the time including those without licenses
+                stated. Many mistakenly think no license means public domain
+                which it does not. Case 2: MIT license. This is an
+                all-permissive license. It allows others to do almost anything
+                with your code. They can copy it as is. They can use it in
+                closed source commercial software. They can change it. They can
+                give it away for free with or without changes. They can sell it
+                with or without changes. And so on and so forth. The only
+                requirement is that they keep the copyright notice and license
+                notice in tact in any copies they distribute including in
+                "substantial portions". However, they can redistribute it with
+                or without changes under whatever license they want. The main
+                purpose of requiring keeping the notice is so that others know
+                how that portion was originally licensed. They can copy
+                non-substantial portions without including your copyright notice
+                and license notice.
+              </p>
+            </div>
           </div>
         </div>
       </main>
