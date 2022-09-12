@@ -1,14 +1,9 @@
 body {
-  font-family: "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 ul {
   padding-left: 18px;
-}
-
-.card__title-article {
-  justify-content: center;
-  align-items: center;
 }
 
 .card__user-article {
