@@ -1,0 +1,73 @@
+.text-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.site_logo {
+  height: 40px;
+}
+
+.hamburg_icon {
+  height: 30px;
+}
+
+.lupa_icon {
+  height: 20px;
+}
+
+.img_notifications {
+  height: 20px;
+}
+
+.c-btn--icon-alone {
+  border: none;
+  --bs-bg-opacity: 0;
+}
+
+.img_menu {
+  height: 20px;
+}
+
+.button_perfil {
+  height: 30px;
+  width: 30px;
+}
+
+.search-text {
+  width: 360px;
+}
+
+.List_item {
+  font: inherit;
+  width: 200px;
+}
+
+.List_item .List_mail {
+  font-size: 13px;
+}
+
+.list-group-item {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.p__other {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.Section_tags {
+  font-size: 15px;
+}
+
+.div__tags {
+  height: 200px;
+}
+
+.formatFooter {
+  background-color: #e5e5e5;
+  font-family: var(--ff-sans-serif);
+  font-size: 14px;
+}
+/*# sourceMappingURL=styles-footer.css.map */

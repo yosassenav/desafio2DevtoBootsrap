@@ -14,16 +14,22 @@
 }
 
 .backgroundPage {
-  background-color: rgb(245, 245, 245);
+  background-color: whitesmoke;
 }
 
 .btn-asideLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: start;
-  background-color: rgb(245, 245, 245);
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  background-color: whitesmoke;
   margin: 0;
   padding: 0;
 }
+
 .btn-asideLeft :hover {
-  background-color: rgb(226, 227, 242);
-}/*# sourceMappingURL=styles-vryahn.css.map */
+  background-color: #e2e3f2;
+}
+/*# sourceMappingURL=styles-vryahn.css.map */
