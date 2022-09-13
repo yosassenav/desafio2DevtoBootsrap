@@ -1,3 +1,4 @@
+<!--AQUI VA LA VISTA PARA CUANDO EL USUARIO HACE CLICK EN UN ARTÍCULO Y ENTRA EN ÉL-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -45,14 +46,12 @@
             <li><button class="rounded btn btn-light mx-1">Top</button></li>
           </ul>
         </div>
-        <div class="card d-flex mb-3">
-          <a href="./article.html">
-            <img
-              src="https://res.cloudinary.com/practicaldev/image/fetch/s--7logSdNt--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/61shkfeklxhsy9od6xly.png"
-              class="card-img-top card__image-article-cover"
-              alt="..."
-            />
-          </a>
+        <div class="card d-flex">
+          <img
+            src="https://res.cloudinary.com/practicaldev/image/fetch/s--7logSdNt--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/61shkfeklxhsy9od6xly.png"
+            class="card-img-top card__image-article-cover"
+            alt="..."
+          />
           <div class="card-body">
             <div class="d-flex flex-row mb-3">
               <div class="flex-column mb-3">
@@ -171,15 +170,40 @@
               </p>
             </div>
           </div>
+          <span class="border-bottom"></span>
+          <div class="card-body">
+            <div class="d-flex my-3 justify-content-between">
+              <h4 class="card-title mx-3 d-flex mb-3">
+                <b> Discussion (3) </b>
+              </h4>
+              <button class="btn btn-light">Subscribe</button>
+            </div>
+            <div class="d-flex mx-4">
+              <div>
+                <a href="#">
+                  <img
+                    src="https://res.cloudinary.com/practicaldev/image/fetch/s--9WR2-vk7--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/818262/a94675b3-79c3-4aaa-b0af-580149ef0c14.png"
+                    class="card__user-article rounded-circle"
+                  />
+                </a>
+              </div>
+              <div class="d-flex container-fluid">
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  placeholder="Add to the discussion"
+                ></textarea>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="card d-flex mb-3">
-          <a href="./article.html">
-            <img
-              src="https://res.cloudinary.com/practicaldev/image/fetch/s--7logSdNt--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/61shkfeklxhsy9od6xly.png"
-              class="card-img-top card__image-article-cover"
-              alt="..."
-            />
-          </a>
+        <!-- <div class="card d-flex mb-3">
+          <img
+            src="https://res.cloudinary.com/practicaldev/image/fetch/s--7logSdNt--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/61shkfeklxhsy9od6xly.png"
+            class="card-img-top card__image-article-cover"
+            alt="..."
+          />
           <div class="card-body">
             <div class="d-flex flex-row mb-3">
               <div class="flex-column mb-3">
@@ -298,15 +322,13 @@
               </p>
             </div>
           </div>
-        </div>
-        <div class="card d-flex mb-3">
-          <a href="./article.html">
-            <img
-              src="https://res.cloudinary.com/practicaldev/image/fetch/s--7logSdNt--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/61shkfeklxhsy9od6xly.png"
-              class="card-img-top card__image-article-cover"
-              alt="..."
-            />
-          </a>
+        </div> -->
+        <!-- <div class="card d-flex mb-3">
+          <img
+            src="https://res.cloudinary.com/practicaldev/image/fetch/s--7logSdNt--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/61shkfeklxhsy9od6xly.png"
+            class="card-img-top card__image-article-cover"
+            alt="..."
+          />
           <div class="card-body">
             <div class="d-flex flex-row mb-3">
               <div class="flex-column mb-3">
@@ -425,7 +447,7 @@
               </p>
             </div>
           </div>
-        </div>
+        </div> -->
       </main>
       <!--Section 3: Right Aside [Victor] -->
       <aside
