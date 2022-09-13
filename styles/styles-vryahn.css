@@ -26,4 +26,98 @@
 }
 .btn-asideLeft :hover {
   background-color: rgb(226, 227, 242);
+}
+
+.btn-purple {
+  background-color: #3b49df;
+  color: #ffffff;
+  border-radius: 0.375rem;
+  padding: 8px 16px;
+}
+
+.BtnContainerPost {
+  display: none;
+}
+
+/* SASS de Vryahn dont touch */
+.btn-vryahn {
+  color: black;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  height: auto;
+  padding: 8px 16px;
+  font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  text-align: start;
+  margin: 0;
+  background-color: rgb(245, 245, 245);
+}
+
+.btn-vryahn:hover {
+  color: #3b49df !important;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  height: auto;
+  padding: 8px 16px;
+  font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  text-align: start;
+  margin: 0;
+  background-color: white !important;
+}
+
+.new-vryahn {
+  padding: 0;
+  margin: 0;
+  margin-top: 5px;
+  font-size: smaller;
+  color: white;
+  background-color: #3b49df;
+  width: 30px;
+  height: 20px;
+}
+
+.btn-title-vryahn {
+  color: black;
+  border-radius: 0.375rem;
+  font-size: 1.3rem;
+  height: auto;
+  font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  text-align: start;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.btn-title-vryahn:hover {
+  color: #3b49df;
+  border-radius: 0.375rem;
+  font-size: 1.3rem;
+  height: auto;
+  font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  text-align: start;
+  margin: 0;
+  padding: 0;
+}
+
+.sinbutton-title-vryahn {
+  color: black;
+  border-radius: 0.375rem;
+  font-size: 1.3rem;
+  height: auto;
+  font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  text-align: start;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.subtitulo {
+  color: #3b49df;
+  border-radius: 0.375rem;
+  font-size: 1.1rem;
+  height: auto;
+  font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  text-align: start;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
 }/*# sourceMappingURL=styles-vryahn.css.map */
