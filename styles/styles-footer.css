@@ -47,6 +47,10 @@
   font-size: 13px;
 }
 
+.offcanvas-header {
+  width: 300px;
+}
+
 .list-group-item {
   text-align: left;
   margin-left: 10px;
