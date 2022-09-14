@@ -1,0 +1,39 @@
+// @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  padding-left: 18px;
+}
+
+.centering__items {
+  align-items: center;
+  justify-content: center;
+}
+
+.card__user-article {
+  width: 32px;
+  height: 32px;
+}
+
+.card__user-text {
+  width: 24px;
+  height: 24px;
+}
+
+.card__user-time-article {
+  width: 45px;
+  height: 18px;
+}
+
+.li__style-none {
+  list-style-type: none;
+}
+
+.formatFooter {
+  background-color: #e5e5e5;
+  font-family: var(--ff-sans-serif);
+  font-size: 14px;
+}
