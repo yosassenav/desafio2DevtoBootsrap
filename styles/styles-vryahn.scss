@@ -1,0 +1,33 @@
+$mainBackgroundColor: rgb(245,245,245);
+$btn-asideLeftBackground: rgb(226,227,242);
+
+*{
+    font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.formatFooter {
+    background-color: #e5e5e5;
+    font-family: var(--ff-sans-serif);
+    font-size: 14px;
+}
+
+#imgDev{
+    width: 50px;
+    height: 40px;
+}
+
+.backgroundPage {
+    background-color: $mainBackgroundColor;
+}
+
+.btn-asideLeft{
+    display: flex;
+    justify-content: start;
+    background-color: $mainBackgroundColor;
+    margin: 0;
+    padding: 0;
+    :hover{
+        background-color: $btn-asideLeftBackground;
+    }
+}

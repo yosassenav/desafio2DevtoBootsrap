@@ -1,0 +1,35 @@
+* {
+  font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.formatFooter {
+  background-color: #e5e5e5;
+  font-family: var(--ff-sans-serif);
+  font-size: 14px;
+}
+
+#imgDev {
+  width: 50px;
+  height: 40px;
+}
+
+.backgroundPage {
+  background-color: whitesmoke;
+}
+
+.btn-asideLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  background-color: whitesmoke;
+  margin: 0;
+  padding: 0;
+}
+
+.btn-asideLeft :hover {
+  background-color: #e2e3f2;
+}
+/*# sourceMappingURL=styles-vryahn.css.map */

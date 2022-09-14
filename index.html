@@ -16,24 +16,893 @@
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
+
     <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="stylesheet" href="./styles/styles-footer.css" />
+    <link rel="stylesheet" href="./styles/styles-vryahn.css" />
+    <link rel="stylesheet" href="/styles/styles-footer.css" />
     <link rel="shortcut icon" href="" />
   </head>
+
   <body>
     <!--Section 1: Navbar and Left Aside [Anay] -->
     <header>
-      <nav></nav>
+      <nav class="navbar__navbar-flex navbar-expand-lg border-bottom">
+        <div class="div__navbar__navbar d-flex me-5 ms-5 p-2">
+          <div class="img__img-dev">
+            <span class="inline-block m:hidden">
+              <button
+                class="c-btn c-btn--icon-alone js-hamburger-triger mx-2 bg-light"
+              >
+                <img
+                  class="hamburg_icon d-lg-none d-md-none d-block"
+                  data-bs-toggle="offcanvas"
+                  href="#offcanvasExample"
+                  role="button"
+                  aria-controls="offcanvasExample"
+                  src="/assets/Aside izq/hamburger.png"
+                  alt="hamburger_icon"
+                />
+              </button>
+            </span>
+            <a href="/" class="site-logo" aria-label="DEV Comunity 👩‍💻👨‍💻 Home">
+              <img
+                class="site_logo"
+                src="assets/Navbar/Logo Dev_Nav.png"
+                alt="img_dev_nav"
+              />
+            </a>
+          </div>
+
+          <div class="search_search js search-form ms-3 me-5" id="search_main">
+            <form
+              method="get"
+              action="/search"
+              role="search"
+              accept-charset="utf-9"
+            >
+              <input name="utf8" type="hidden" value="ok" />
+              <div class="search-fieldHoe border rounded-2">
+                <div class="search-field flex-1 relative">
+                  <input
+                    class="search-text border-0 m-2"
+                    type="text"
+                    id
+                    name="q"
+                    placeholder="Search..."
+                    autocomplete="off"
+                    aria-label="Search text"
+                  />
+                  <button
+                    type="submit"
+                    aria-label="Search"
+                    class="btn btn-outline-secondary border-0 bg-white mb-1"
+                  >
+                    <img
+                      class="lupa_icon"
+                      src="assets/Navbar/lupa.png"
+                      alt="img_lupa_nav"
+                    />
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="creation_creation ms-auto">
+            <button
+              class="btn btn-outline-primary d-block d-md-block d-lg-block d-sm-none"
+              type="submit"
+            >
+              Created Post
+            </button>
+            <a
+              href="/notifications"
+              id="notifications_link"
+              class="c-link c-link--icon-alone c-link--block mx-1"
+              aria-label="notifications"
+              aria
+              aria-current="page"
+            >
+              <img
+                class="img_notifications mx-3"
+                src="assets/Navbar/bell.png"
+                alt="img_notifications_nav"
+              />
+            </a>
+            <div class="btn-group dropstart">
+              <button
+                type="button"
+                class="button_perfil btn btn-secondary rounded-circle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              ></button>
+              <ul class="List_item dropdown-menu">
+                <li class="List_button btn">
+                  SuperKoders
+                  <p class="List_mail">@SuperKoders</p>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li class="List_button btn">Dashboard</li>
+                <li class="List_button btn">Created a post</li>
+                <li class="List_button btn">Reading List</li>
+                <li class="List_button btn">Settings</li>
+                <li><hr class="dropdown-divider" /></li>
+                <li class="List_button btn">Sing out</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
     <!--here is where the feed starts!-->
     <div class="d-flex row">
-      <aside
-        class="d-flex bg-info col-lg-3 col-md-3 d-none d-sm-none d-md-block"
+      <!-- -------offcanvas Inicio--- -->
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
       >
-        Left Aside
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+            DEV Comunity 👩‍💻👨‍💻
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <div class="offcanvas-body">
+          <div class="List_aside m-2 p-2">
+            <ul>
+              <li class="li__menu-list d-flex btn hover-primary">
+                <img
+                  class="img_menu"
+                  src="/assets/Aside izq/house.png"
+                  alt=""
+                  class="img__home"
+                />
+                <a
+                  href="#"
+                  class="list-group-item list-group-item-action active"
+                  aria-current="true"
+                  >Home</a
+                >
+              </li>
+              <li class="li__menu-list d-flex btn">
+                <img
+                  class="img_menu"
+                  src="assets/Aside izq/packing-list.png"
+                  alt=""
+                  class="img__ReadingList"
+                />
+                <a
+                  href="#"
+                  class="list-group-item list-group-item-action active"
+                  aria-current="true"
+                  >Reading List</a
+                >
+              </li>
+              <li class="li__menu-list d-flex btn">
+                <img
+                  class="img_menu"
+                  src="assets/Aside izq/document.png"
+                  alt=""
+                  class="img__Listing"
+                />
+                <a
+                  href="#"
+                  class="list-group-item list-group-item-action active"
+                  aria-current="true"
+                  >Listings</a
+                >
+              </li>
+              <li class="li__menu-list d-flex btn">
+                <img
+                  class="img_menu"
+                  src="assets/Aside izq/mic.png"
+                  alt=""
+                  class="img__Podcast"
+                />
+                <a
+                  href="#"
+                  class="list-group-item list-group-item-action active"
+                  aria-current="true"
+                  >Podcast</a
+                >
+              </li>
+              <li class="li__menu-list d-flex btn">
+                <img
+                  class="img_menu"
+                  src="assets/Aside izq/video-camera.png"
+                  alt=""
+                  class="img__Videos"
+                />
+                <a
+                  href="#"
+                  class="list-group-item list-group-item-action active"
+                  aria-current="true"
+                  >Videos</a
+                >
+              </li>
+              <li class="li__menu-list d-flex btn">
+                <img
+                  class="img_menu"
+                  src="assets/Aside izq/price-tag.png"
+                  alt=""
+                  class="img__Tags"
+                />
+                <a
+                  href=""
+                  class="list-group-item list-group-item-action active"
+                  aria-current="true"
+                  >Tags</a
+                >
+              </li>
+              <li class="li__menu-list d-flex btn">
+                <img
+                  class="img_menu"
+                  src="assets/Aside izq/light-bulb.png"
+                  alt=""
+                  class="img__FAQ"
+                />
+                <a
+                  href=""
+                  class="list-group-item list-group-item-action active"
+                  aria-current="true"
+                  >FAQ</a
+                >
+              </li>
+              <li class="li__menu-list d-flex btn">
+                <img
+                  class="img_menu"
+                  src="assets/Aside izq/online-shopping.png"
+                  alt=""
+                  class="img__ForemShop"
+                />
+                <a
+                  href=""
+                  class="list-group-item list-group-item-action active"
+                  aria-current="true"
+                  >Forem Shop</a
+                >
+              </li>
+              <li class="li__menu-list d-flex btn">
+                <img
+                  class="img_menu"
+                  src="/assets/Aside izq/corazon.png"
+                  alt=""
+                  class="img__Spondors"
+                />
+                <a
+                  href=""
+                  class="list-group-item list-group-item-action active"
+                  aria-current="true"
+                  >Spondors</a
+                >
+              </li>
+              <li class="li__menu-list d-flex btn">
+                <img
+                  class="img_menu"
+                  src="assets/Aside izq/dev.jpeg"
+                  alt=""
+                  class="img__About"
+                />
+                <a href="#" class="list-group-item list-group-item-action"
+                  >About</a
+                >
+              </li>
+              <li class="li__menu-list d-flex btn">
+                <img
+                  class="img_menu"
+                  src="assets/Aside izq/trompeta.png"
+                  alt=""
+                  class="img__Contact"
+                />
+                <a href="#" class="list-group-item list-group-item-action"
+                  >Contact</a
+                >
+              </li>
+              <li class="li__menu-list d-flex btn">
+                <img
+                  class="img_menu"
+                  src="assets/Aside izq/open-book-2.png"
+                  alt=""
+                  class="Guides"
+                />
+                <a href="#" class="list-group-item list-group-item-action"
+                  >Guides</a
+                >
+              </li>
+              <li class="li__menu-list d-flex btn">
+                <img
+                  class="img_menu"
+                  src="assets/Aside izq/thinking.png"
+                  alt=""
+                  class="Sofware"
+                />
+                <a href="#" class="list-group-item list-group-item-action"
+                  >Sofware comparisons</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="mx-2 p-2">
+            <p class="p__other ms-5 fw-bold">Other</p>
+            <ul>
+              <li class="li_menu-list2 d-flex btn">
+                <img
+                  class="img_menu"
+                  src="assets/Aside izq/pulgar-arriba.png"
+                  alt=""
+                  class="Code"
+                />
+                <a
+                  href="#"
+                  class="list-group-item list-group-item-action active"
+                  aria-current="true"
+                  >Code of Conduct</a
+                >
+              </li>
+              <li class="li_menu-list2 d-flex btn">
+                <img
+                  class="img_menu"
+                  src="assets/Aside izq/nerd.png"
+                  alt=""
+                  class="Privacy"
+                />
+                <a href="#" class="list-group-item list-group-item-action"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li class="li_menu-list2 d-flex btn">
+                <img
+                  class="img_menu"
+                  src="assets/Aside izq/eyes.png"
+                  alt=""
+                  class="Terms"
+                />
+                <a href="#" class="list-group-item list-group-item-action"
+                  >Terms of use</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="mx-4 p-2">
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn ms-3 rounded-2">
+                <img
+                  class="img_menu"
+                  src="assets/Aside izq/gorjeo.png"
+                  alt=""
+                  class="Twitter"
+                />
+                <a href="#" class="list-group-item list-group-item-action"></a>
+              </button>
+              <button type="button" class="btn rounded-2">
+                <img
+                  class="img_menu"
+                  src="assets/Aside izq/facebook-2.png"
+                  alt=""
+                  class="facebook"
+                />
+                <a href="#" class="list-group-item list-group-item-action"></a>
+              </button>
+              <button type="button" class="btn rounded-2">
+                <img
+                  class="img_menu"
+                  src="assets/Aside izq/github.png"
+                  alt=""
+                  class="github"
+                />
+                <a href="#" class="list-group-item list-group-item-action"></a>
+              </button>
+              <button type="button" class="btn rounded-2">
+                <img
+                  class="img_menu"
+                  src="assets/Aside izq/instagram.png"
+                  alt=""
+                  class="Instagram"
+                />
+                <a href="#" class="list-group-item list-group-item-action"></a>
+              </button>
+              <button type="button" class="btn rounded-2">
+                <img
+                  class="img_menu"
+                  src="assets/Aside izq/twitch.png"
+                  alt=""
+                  class="twitch"
+                />
+                <a href="#" class="list-group-item list-group-item-action"></a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- -------offcanvas Fin--- -->
+      <!--Section 1: Left Aside [Anay] -->
+      <aside
+        class="d-flex bg-light col-lg-3 col-md-3 d-none d-sm-none d-md-block leftAside rounded me-1"
+      >
+        <div class="d-flex align-items-start flex-column mb-3">
+          <div class="all_slist_items bg-light ms-5">
+            <div class="List_aside m-2 p-2 bg-light">
+              <ul>
+                <li class="li__menu-list d-flex btn btn-light hover-primary">
+                  <img
+                    class="img_menu"
+                    src="/assets/Aside izq/house.png"
+                    alt=""
+                    class="img__home"
+                  />
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action active"
+                    aria-current="true"
+                    >Home</a
+                  >
+                </li>
+                <li class="li__menu-list d-flex btn btn-light">
+                  <img
+                    class="img_menu"
+                    src="assets/Aside izq/packing-list.png"
+                    alt=""
+                    class="img__ReadingList"
+                  />
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action active"
+                    aria-current="true"
+                    >Reading List</a
+                  >
+                </li>
+                <li class="li__menu-list d-flex btn btn-light">
+                  <img
+                    class="img_menu"
+                    src="assets/Aside izq/document.png"
+                    alt=""
+                    class="img__Listing"
+                  />
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action active"
+                    aria-current="true"
+                    >Listings</a
+                  >
+                </li>
+                <li class="li__menu-list d-flex btn btn-light">
+                  <img
+                    class="img_menu"
+                    src="assets/Aside izq/mic.png"
+                    alt=""
+                    class="img__Podcast"
+                  />
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action active"
+                    aria-current="true"
+                    >Podcast</a
+                  >
+                </li>
+                <li class="li__menu-list d-flex btn btn-light">
+                  <img
+                    class="img_menu"
+                    src="assets/Aside izq/video-camera.png"
+                    alt=""
+                    class="img__Videos"
+                  />
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action active"
+                    aria-current="true"
+                    >Videos</a
+                  >
+                </li>
+                <li class="li__menu-list d-flex btn btn-light">
+                  <img
+                    class="img_menu"
+                    src="assets/Aside izq/price-tag.png"
+                    alt=""
+                    class="img__Tags"
+                  />
+                  <a
+                    href=""
+                    class="list-group-item list-group-item-action active"
+                    aria-current="true"
+                    >Tags</a
+                  >
+                </li>
+                <li class="li__menu-list d-flex btn btn-light">
+                  <img
+                    class="img_menu"
+                    src="assets/Aside izq/light-bulb.png"
+                    alt=""
+                    class="img__FAQ"
+                  />
+                  <a
+                    href=""
+                    class="list-group-item list-group-item-action active"
+                    aria-current="true"
+                    >FAQ</a
+                  >
+                </li>
+                <li class="li__menu-list d-flex btn btn-light">
+                  <img
+                    class="img_menu"
+                    src="assets/Aside izq/online-shopping.png"
+                    alt=""
+                    class="img__ForemShop"
+                  />
+                  <a
+                    href=""
+                    class="list-group-item list-group-item-action active"
+                    aria-current="true"
+                    >Forem Shop</a
+                  >
+                </li>
+                <li class="li__menu-list d-flex btn btn-light">
+                  <img
+                    class="img_menu"
+                    src="/assets/Aside izq/corazon.png"
+                    alt=""
+                    class="img__Spondors"
+                  />
+                  <a
+                    href=""
+                    class="list-group-item list-group-item-action active"
+                    aria-current="true"
+                    >Spondors</a
+                  >
+                </li>
+                <li class="li__menu-list d-flex btn btn-light">
+                  <img
+                    class="img_menu"
+                    src="assets/Aside izq/dev.jpeg"
+                    alt=""
+                    class="img__About"
+                  />
+                  <a href="#" class="list-group-item list-group-item-action"
+                    >About</a
+                  >
+                </li>
+                <li class="li__menu-list d-flex btn btn-light">
+                  <img
+                    class="img_menu"
+                    src="assets/Aside izq/trompeta.png"
+                    alt=""
+                    class="img__Contact"
+                  />
+                  <a href="#" class="list-group-item list-group-item-action"
+                    >Contact</a
+                  >
+                </li>
+                <li class="li__menu-list d-flex btn btn-light">
+                  <img
+                    class="img_menu"
+                    src="assets/Aside izq/open-book-2.png"
+                    alt=""
+                    class="Guides"
+                  />
+                  <a href="#" class="list-group-item list-group-item-action"
+                    >Guides</a
+                  >
+                </li>
+                <li class="li__menu-list d-flex btn btn-light">
+                  <img
+                    class="img_menu"
+                    src="assets/Aside izq/thinking.png"
+                    alt=""
+                    class="Sofware"
+                  />
+                  <a href="#" class="list-group-item list-group-item-action"
+                    >Sofware comparisons</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="mx-2 p-2 bg-light">
+              <p class="p__other ms-5 fw-bold">Other</p>
+              <ul>
+                <li class="li_menu-list2 d-flex btn btn-light">
+                  <img
+                    class="img_menu"
+                    src="assets/Aside izq/pulgar-arriba.png"
+                    alt=""
+                    class="Code"
+                  />
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action active"
+                    aria-current="true"
+                    >Code of Conduct</a
+                  >
+                </li>
+                <li class="li_menu-list2 d-flex btn btn-light">
+                  <img
+                    class="img_menu"
+                    src="assets/Aside izq/nerd.png"
+                    alt=""
+                    class="Privacy"
+                  />
+                  <a href="#" class="list-group-item list-group-item-action"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li class="li_menu-list2 d-flex btn btn-light">
+                  <img
+                    class="img_menu"
+                    src="assets/Aside izq/eyes.png"
+                    alt=""
+                    class="Terms"
+                  />
+                  <a href="#" class="list-group-item list-group-item-action"
+                    >Terms of use</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="mx-4 p-2">
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-light ms-3 rounded-2">
+                  <img
+                    class="img_menu"
+                    src="assets/Aside izq/gorjeo.png"
+                    alt=""
+                    class="Twitter"
+                  />
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action"
+                  ></a>
+                </button>
+                <button type="button" class="btn btn-light rounded-2">
+                  <img
+                    class="img_menu"
+                    src="assets/Aside izq/facebook-2.png"
+                    alt=""
+                    class="facebook"
+                  />
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action"
+                  ></a>
+                </button>
+                <button type="button" class="btn btn-light rounded-2">
+                  <img
+                    class="img_menu"
+                    src="assets/Aside izq/github.png"
+                    alt=""
+                    class="github"
+                  />
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action"
+                  ></a>
+                </button>
+                <button type="button" class="btn btn-light rounded-2">
+                  <img
+                    class="img_menu"
+                    src="assets/Aside izq/instagram.png"
+                    alt=""
+                    class="Instagram"
+                  />
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action"
+                  ></a>
+                </button>
+                <button type="button" class="btn btn-light rounded-2">
+                  <img
+                    class="img_menu"
+                    src="assets/Aside izq/twitch.png"
+                    alt=""
+                    class="twitch"
+                  />
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action"
+                  ></a>
+                </button>
+              </div>
+            </div>
+
+            <div class="div__tags m-2 p-2 overflow-auto">
+              <nav class="mb-6 ms-5" aria-label="Aside-Nav">
+                <header
+                  class="pt-2 pl-3 pb-0 pr-0 flex items-center jutify-between"
+                >
+                  <h2 class="Section_tags fw-bold">My Tags</h2>
+                  <a
+                    id="tag-priority-link"
+                    href="/dashboard/following_tags"
+                    class="c-link c-link--block c-link--icon alone"
+                    aria-label="customize tag priority"
+                    title="Customize tag priority"
+                  ></a>
+                </header>
+                <div class="div div__Aside-Nav-Tags list-group overflow-auto">
+                  <a
+                    href="/t/javascript"
+                    class="c-link c-link--block"
+                    title="javascript tag"
+                    >#javascript</a
+                  >
+                  <a
+                    href="/t/react"
+                    class="c-link c-link--block"
+                    title="react tag"
+                    >#react</a
+                  >
+                  <a
+                    href="/t/python"
+                    class="c-link c-link--block"
+                    title="python tag"
+                    >#python</a
+                  >
+                  <a
+                    href="/t/productivity"
+                    class="c-link c-link--block"
+                    title="productivity tag"
+                    >#productivity</a
+                  >
+                  <a
+                    href="/t/devops"
+                    class="c-link c-link--block"
+                    title="devops tag"
+                    >#devops</a
+                  >
+                  <a
+                    href="/t/opensource"
+                    class="c-link c-link--block"
+                    title="opensource tag"
+                    >#opensource</a
+                  >
+                  <a
+                    href="/t/typescript"
+                    class="c-link c-link--block"
+                    title="typescript tag"
+                    >#typescript</a
+                  >
+                  <a
+                    href="/t/androi"
+                    class="c-link c-link--block"
+                    title="androi tag"
+                    >#androi</a
+                  >
+                  <a href="/t/php" class="c-link c-link--block" title="php tag"
+                    >#php</a
+                  >
+                  <a
+                    href="/t/security"
+                    class="c-link c-link--block"
+                    title="security tag"
+                    >#security</a
+                  >
+                  <a
+                    href="/t/blockchain"
+                    class="c-link c-link--block"
+                    title="blockchain tag"
+                    >#blockchain</a
+                  >
+                  <a
+                    href="/t/linux"
+                    class="c-link c-link--block"
+                    title="linux tag"
+                    >#linux</a
+                  >
+                  <a href="/t/go" class="c-link c-link--block" title="go tag"
+                    >#go</a
+                  >
+                  <a href="/t/git" class="c-link c-link--block" title="git tag"
+                    >#git</a
+                  >
+                  <a
+                    href="/t/machinelearning"
+                    class="c-link c-link--block"
+                    title="machinelearning tag"
+                    >#machinlearning</a
+                  >
+                  <a
+                    href="/t/angular"
+                    class="c-link c-link--block"
+                    title="angular tag"
+                    >#angular</a
+                  >
+                  <a
+                    href="/t/vscode"
+                    class="c-link c-link--block"
+                    title="vscode tag"
+                    >#vscode</a
+                  >
+                  <a href="/t/sql" class="c-link c-link--block" title="sql tag"
+                    >#sql</a
+                  >
+                  <a
+                    href="/t/computerscience"
+                    class="c-link c-link--block"
+                    title="computerscience tag"
+                    >#computerscience</a
+                  >
+                  <a
+                    href="/t/djando"
+                    class="c-link c-link--block"
+                    title="djando tag"
+                    >#djando</a
+                  >
+                  <a
+                    href="/t/gamedev"
+                    class="c-link c-link--block"
+                    title="gamedev tag"
+                    >#gamedev</a
+                  >
+                  <a href="/t/sre" class="c-link c-link--block" title="sre tag"
+                    >#sre</a
+                  >
+                </div>
+              </nav>
+            </div>
+
+            <div class="m-2 p-2">
+              <div class="card ms-5" style="width: 15rem">
+                <img
+                  src="/assets/Aside izq/Codenewbie.png"
+                  class="card-img-top"
+                  alt="Codenewbie"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Calling all early-career developers & coding mentors!
+                  </h5>
+                  <p class="card-text">
+                    Join CodeNewbie Community: a supportive space for coding
+                    newbies to connect & express themselves.
+                  </p>
+                  <a href="#" class="btn strong fw-bold text-primary"
+                    >→Get in on the fun!</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="m-2 p-2">
+              <div class="card ms-5" style="width: 15rem">
+                <div class="card-body">
+                  <p class="card-text">
+                    DEV runs on 100% open source code known as
+                    <a href="https:/github.com/forem/forem">Forem</a>
+                    .
+                  </p>
+                  <p class="card-text">
+                    Contribute to the codebase or host your own!
+                  </p>
+                  <p><strong>Check these out!</strong></p>
+                  <ul>
+                    <li class="li__link-card">
+                      <a href="http://github.com/forem/forem" class="card-link"
+                        >Main Forem Repo</a
+                      >
+                    </li>
+                    <li class="li__link-card">
+                      <a
+                        href="http://github.com/forem/selfhost"
+                        class="card-link"
+                        >Self-Host Instructions</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </aside>
       <!--Section 3: Main [Vanne] -->
-      <main class="container-fluid col-lg-6 col-md-6">
+      <main class="container-fluid col-lg-6 col-md-6 bg-light">
         <div>
           <ul class="d-flex li__style-none">
             <li>
